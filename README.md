@@ -1,5 +1,9 @@
 # PF-MDD：基于 YOLOv8 的塑料薄膜多类表面缺陷检测
 
+[![CI](https://github.com/LuOzawa/pf-mdd-yolov8-defect-detection/actions/workflows/ci.yml/badge.svg)](https://github.com/LuOzawa/pf-mdd-yolov8-defect-detection/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+
 面向挤出吹膜产线的塑料薄膜表面缺陷自动检测研究。以 **YOLOv8** 为核心框架，
 针对 4096×256 宽幅细长图像设计**切块（tiling）+ 重叠 + 坐标回映射**的处理方案，
 目标是在 12 类薄膜表面缺陷上实现可落地的自动检测。
