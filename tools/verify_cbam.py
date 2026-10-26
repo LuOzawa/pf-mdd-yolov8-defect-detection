@@ -31,6 +31,26 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(BASE_DIR))
 
 
+def _dataset_ready(yaml_path: Path) -> bool:
+    """判断 yaml 指向的数据集目录是否真实可用。
+
+    仓库里只带元数据，`datasets/**/pf_mdd.yaml` 中的 `path` 指向旧机器上的绝对
+    路径。若直接拿它建训练器会在校验阶段报 FileNotFoundError，因此先验证
+    `images/val` 与 `labels/val` 是否真实存在。
+    """
+    try:
+        import yaml
+        cfg = yaml.safe_load(yaml_path.read_text(encoding="utf-8")) or {}
+        root = Path(str(cfg.get("path", "")).strip())
+        if not str(root):
+            return False
+        if not root.is_absolute():
+            root = (yaml_path.parent / root).resolve()
+        return (root / "images" / "val").is_dir() and (root / "labels" / "val").is_dir()
+    except Exception:  # noqa: BLE001
+        return False
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="CBAM 注入自检")
     parser.add_argument("--weights", default=None, help="预训练权重，默认 yolov8s.pt")
@@ -105,8 +125,10 @@ def main() -> int:
         for cand in (
             BASE_DIR / "pfmd_tiled_dataset_refined" / "pf_mdd.yaml",
             BASE_DIR / "pfmd_tiled_dataset" / "pf_mdd.yaml",
+            BASE_DIR / "datasets" / "pfmd_tiled_dataset_refined" / "pf_mdd.yaml",
+            BASE_DIR / "datasets" / "pfmd_tiled_dataset" / "pf_mdd.yaml",
         ):
-            if cand.exists():
+            if cand.exists() and _dataset_ready(cand):
                 data_yaml = str(cand)
                 break
 

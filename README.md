@@ -7,6 +7,7 @@
 - **数据集**：PF-MDD（Plastic Film Multi-class Defect Detection）
 - **缺陷类别**：12 类（原始编号 002 / 006 / 010 / 016 / 019 / 022 / 023 / 025 / 027 / 029 / 030 / 036）
 - **原始图像**：4096×256 单通道工业线扫图
+- **已实现的改进**：CBAM 注意力（`modules/`）、宽幅图滑窗推理融合（`sliding_window_inference.py`）
 
 项目为本科毕业设计作品。
 
@@ -29,8 +30,9 @@
 | 技术指标 FPS ≥ 30 | ❌ 无法验证 | 无训练产物；当前开发机无 CUDA |
 | 技术指标 12 类全覆盖 | ⚠️ 受数据限制 | 测试集中 `type_027` / `type_029` / `type_036` **零样本** |
 
-**结论**：这是一份「有完整流水线、缺实验结论」的工程基础。若要用于答辩，
-必须先完成训练并补齐 4.3、4.4 两项。
+**结论**：这是一份「有完整流水线、两项改进已落地、但缺实验结论」的工程基础。
+若要用于答辩，必须完成**训练并产出指标**，并补齐 **4.4 横向对比**；
+4.3 的两项改进代码已完成，但「提升了多少」仍需实验数据支撑。
 
 ---
 
@@ -122,9 +124,9 @@ Gamma、高斯噪声、模糊等变换生成。真实的（切块）训练图只
 │                                        #   WideImageProcessor：重叠切块 / 坐标回映射 /
 │                                        #   自适应缩放填充 / 切块可视化
 ├── train_baseline.py                    # YOLOv8 训练入口（GPU 自动检测）
-├── evaluate_model.py                    # 评估入口（612 行，含类别稳定性分析）
+├── evaluate_model.py                    # 评估入口（611 行，含类别稳定性分析）
 ├── verify_pipeline.py                   # 数据与配置一致性自检（纯只读）
-├── sliding_window_inference.py          # ★ 滑窗推理 + 跨块 NMS 融合（改进四）
+├── sliding_window_inference.py          # ★ 滑窗推理 + 跨块 NMS 融合（改进四，383 行）
 │
 ├── modules/                             # ★ 自定义模型模块
 │   ├── cbam.py                          #   CBAM 注意力（通道 + 空间）
@@ -154,7 +156,7 @@ Gamma、高斯噪声、模糊等变换生成。真实的（切块）训练图只
 │   │   └── yolo_labels/*.txt            #   104 个标注文件（138 框，复现必备）
 │   ├── pfmd_tiled_dataset/
 │   │   ├── pf_mdd.yaml  rebuild_summary.json
-│   └── pfmd_tiled_dataset_refined/
+│   ├── pfmd_tiled_dataset_refined/
 │       ├── pf_mdd.yaml  refine_summary.json  step10_simulation_summary.json
 │
 ├── docs/
@@ -165,10 +167,20 @@ Gamma、高斯噪声、模糊等变换生成。真实的（切块）训练图只
 │
 ├── requirements.txt                     # 依赖清单
 ├── 数据集说明.md                          # 任务书要求的交付物
-└── 启动说明.md                            # 环境配置与运行步骤
+├── 启动说明.md                            # 环境配置与运行步骤
+├── .gitignore                           # 排除数据图片 / 权重 / 训练输出
+└── .gitattributes                       # 行尾与二进制类型约定
 ```
 
-**代码规模**：主脚本 9 个 / 约 3,300 行，历史脚本 7 个 / 约 800 行。
+**代码规模**（`wc -l` 实测）：
+
+| 分组 | 文件数 | 行数 |
+| --- | --- | --- |
+| 主流程脚本（根目录 `*.py`） | 10 | 3,775 |
+| `modules/`（CBAM 与注入） | 4 | 312 |
+| `tools/`（自检） | 1 | 158 |
+| `legacy_steps/`（早期流水线） | 7 | 2,191 |
+| **合计** | **22** | **6,436** |
 
 ---
 

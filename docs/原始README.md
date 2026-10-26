@@ -1,3 +1,20 @@
+> **⚠️ 本文档为原作者 README，已归档保留，仅供参考，内容与当前仓库不一致。**
+>
+> 已知差异（请以仓库根目录的 [README.md](../README.md) 为准）：
+>
+> | 原 README 的说法 | 当前实际情况 |
+> | --- | --- |
+> | `step1`~`step7` 位于项目根目录 | 已移入 `legacy_steps/` |
+> | 最新训练结果在 `training_results/yolov8s_20260418_110331/` | 该目录**不存在**，`training_results/` 为空 |
+> | 会生成 `training_reports/training_curves_comprehensive.png` 等 | 该目录为空，尚未产出评估图表 |
+> | 无 `requirements.txt`，需手动装依赖 | 仓库已提供 `requirements.txt` |
+> | `train_baseline.py` 固定 `device='cpu'` | 已改为 GPU 自动检测 |
+> | 未提及 CBAM / 滑窗推理 | 已新增 `modules/`（CBAM）与 `sliding_window_inference.py` |
+>
+> 保留下来的价值：其中的数据处理流水线说明、参数含义与「已知现象与建议」一节仍有参考价值。
+
+---
+
 # PF-MDD YOLOv8 训练项目（当前版本）
 
 本项目用于塑料薄膜缺陷检测（PF-MDD），基于 YOLOv8s 训练与评估，当前主数据集为 `pfmd_tiled_dataset`。

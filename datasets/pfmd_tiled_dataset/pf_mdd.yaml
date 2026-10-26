@@ -1,8 +1,12 @@
 # PF-MDD Dataset Configuration for YOLOv8
 # Plastic Film Multi-class Defect Detection (4096x256)
 
+# 注意：本文件是数据集配置的「元数据快照」，path 使用相对占位值。
+# 实际训练时 project_config.ensure_dataset_yaml() 会把 path 改写为
+# 当前工作区的绝对路径，因此本文件不需要手工维护。
+
 # Dataset paths
-path: E:/work/26032401/code1/pfmd_tiled_dataset
+path: .
 train: images/train
 val: images/val
 test: images/test
