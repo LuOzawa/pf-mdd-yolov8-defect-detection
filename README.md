@@ -163,11 +163,11 @@ Gamma、高斯噪声、模糊等变换生成。真实的（切块）训练图只
 │   ├── PROJECT_FILE_CODE_GUIDE.md       # 原项目文件说明
 │   ├── PF_MDD_Imbalance_Analysis_Report.txt  # 类别不平衡分析与改进建议
 │   ├── 原始README.md                     # 原作者 README（部分内容已过时，见下）
-│   └── tiling_visualization.png         # 切块策略可视化
+│   ├── tiling_visualization.png         # 切块策略可视化
+│   ├── 数据集说明.md                           # 任务书要求的交付物
+│   └── 启动说明.md                             # 环境配置与运行步骤
 │
 ├── requirements.txt                     # 依赖清单
-├── 数据集说明.md                          # 任务书要求的交付物
-├── 启动说明.md                            # 环境配置与运行步骤
 ├── .gitignore                           # 排除数据图片 / 权重 / 训练输出
 └── .gitattributes                       # 行尾与二进制类型约定
 ```
@@ -186,7 +186,7 @@ Gamma、高斯噪声、模糊等变换生成。真实的（切块）训练图只
 
 ## 三、快速开始
 
-> 详细步骤见 **[启动说明.md](启动说明.md)**。
+> 详细步骤见 **[docs/启动说明.md](docs/启动说明.md)**。
 
 ```bash
 # 1. 安装依赖
