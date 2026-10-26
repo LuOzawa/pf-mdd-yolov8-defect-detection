@@ -18,7 +18,7 @@ ultralytics==8.3.0
 
 # 图像处理
 opencv-python==4.10.0.84
-Pillow==11.0.0
+Pillow==13.0.0
 
 # 数据处理与可视化
 numpy==1.26.4
