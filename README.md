@@ -172,6 +172,11 @@ Gamma、高斯噪声、模糊等变换生成。真实的（切块）训练图只
 └── .gitattributes                       # 行尾与二进制类型约定
 ```
 
+> **关于根目录的 `step*.py`**：这些是数据/训练流水线的顺序步骤脚本（`step0` → `step10`），
+> 全部 `import project_config`（根目录，集中提供路径与超参）。
+> 保持同层是为了让 `python step8_refine_split_and_boost.py` 无需设置 `PYTHONPATH` 即可直接运行——
+> 这是刻意的工程取舍，不是目录规划遗漏。
+
 **代码规模**（`wc -l` 实测）：
 
 | 分组 | 文件数 | 行数 |
