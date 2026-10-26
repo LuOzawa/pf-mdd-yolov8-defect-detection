@@ -22,7 +22,7 @@
 | 4.1 数据集构建与预处理 | ✅ 完成 | 整合、掩码转 YOLO、切块、分层划分、类别均衡全部实现并跑通 |
 | 4.2 YOLOv8 基线模型构建 | 🟡 代码就绪，**未训练** | `train_baseline.py` 可用，但仓库内**没有训练好的权重** |
 | 4.2 基线性能评估 | ❌ 未产出 | `training_results/`、`training_reports/` 为空，无 mAP / FPS 数据 |
-| 4.3 改进（至少 2 项） | 🟡 完成 1 项 | 仅「改进四：滑窗推理 + 结果融合」已实现；CBAM/SE、FPN 优化、Focal Loss、蒸馏剪枝**均未实现** |
+| 4.3 改进（至少 2 项） | ✅ 代码完成 2 项（待训练验证） | **改进一 CBAM 注意力** + **改进四 滑窗推理融合**，均已实现并通过注入自检；FPN 优化 / Focal Loss / 蒸馏剪枝未做 |
 | 4.4 横向对比实验 | ❌ 未做 | 未与 YOLOv5s / YOLOv7 / Faster R-CNN / RT-DETR 对比 |
 | 4.5 论文撰写 | — | 不在本仓库范围 |
 | 技术指标 mAP@0.5 ≥ 85% | ❌ 无法验证 | 无训练产物 |
@@ -126,6 +126,13 @@ Gamma、高斯噪声、模糊等变换生成。真实的（切块）训练图只
 ├── verify_pipeline.py                   # 数据与配置一致性自检（纯只读）
 ├── sliding_window_inference.py          # ★ 滑窗推理 + 跨块 NMS 融合（改进四）
 │
+├── modules/                             # ★ 自定义模型模块
+│   ├── cbam.py                          #   CBAM 注意力（通道 + 空间）
+│   ├── attach_cbam.py                   #   加载后注入工具（不碰 ultralytics 源码）
+│   └── cbam_trainer.py                  #   训练器子类（在 get_model 里注入）
+├── tools/
+│   └── verify_cbam.py                   #   CBAM 注入自检（训练前 30 秒跑一遍）
+│
 ├── step0_rebuild_tiled_dataset_from_raw.py   # 从原始数据重建切块数据集
 ├── step8_refine_split_and_boost.py           # 重划分 + train 少数类补框
 ├── step9_experiment_tracker.py               # 实验指标自动追踪 → CSV
@@ -209,7 +216,7 @@ python sliding_window_inference.py \
 
 ---
 
-## 四、改进四：滑窗推理 + 结果融合（已实现）
+## 四、改进项 A：滑窗推理 + 结果融合（对应任务书改进四）
 
 `sliding_window_inference.py` 实现了推理侧的完整链路：
 
@@ -237,12 +244,100 @@ python sliding_window_inference.py \
 
 ---
 
-## 五、已知问题与风险
+## 五、改进项 B：CBAM 注意力（对应任务书改进一）
+
+`modules/cbam.py` 实现与原论文一致的 CBAM：通道注意力（avg/max 双路 MLP 共享）
+→ 空间注意力（通道维 avg/max 拼接 + 7×7 卷积）。
+
+### 为何不能直接注入 `YOLO(...).model`
+
+排查时发现两个坑（已绕开）：
+
+1. `YOLO('.pt').model` 的**所有参数 `requires_grad=False`**
+2. ultralytics 在 `model.train()` 时**不会沿用这个对象**，而是由
+   `DetectionTrainer.get_model()` 依据 `model.yaml` **重新构建**模型再把权重 load 进去
+
+所以对 `YOLO(...).model` 注入 CBAM 在训练时会被直接丢弃。正确做法是重写
+`get_model()`：
+
+```
+构建 DetectionModel(cfg, nc=12)
+    ↓
+load(预训练权重)          ← C2f 等主干参数来自 COCO
+    ↓
+attach_cbam(...)         ← CBAM 随机初始化，参与训练
+```
+
+### 实现方式
+
+| 文件 | 作用 |
+| --- | --- |
+| `modules/cbam.py` | CBAM 模块本体，不依赖 ultralytics |
+| `modules/attach_cbam.py` | 把一个模块包成 `XxxWithCBAM`，保持张量形状不变，并透传 `i/f/type` 等元信息 |
+| `modules/cbam_trainer.py` | `CBAMDetectionTrainer`：在 `get_model()` 中注入 |
+| `tools/verify_cbam.py` | 自检脚本 |
+
+**不采用 YAML + monkeypatch `parse_model` 的原因**：那需要改动 ultralytics 内部实现，
+且解析器不会给未注册模块自动补 `c1`，换版本或改 width 就容易失效。
+
+### 三种注入位置（实测参数量）
+
+| 位置 | 层索引 | CBAM 个数 | 参数量 | 增量 |
+| --- | --- | --- | --- | --- |
+| `backbone`（推荐） | 2, 4, 6, 8 | 4 | 11,184,156 | +43,912 |
+| `neck` | 12, 15, 18, 21 | 4 | 11,191,836 | +51,592 |
+| `all` | 全部 8 个 | 8 | 11,235,748 | +95,504 |
+
+基线 YOLOv8s（nc=12）为 11,140,244 参数。
+
+### 启用方式
+
+```bash
+# 方式一：改 overrides
+python -c "from train_baseline import train_baseline_yolov8; \
+    train_baseline_yolov8(overrides={'cbam':'backbone','epochs':100})"
+
+# 方式二：先自检，再训练
+python tools/verify_cbam.py --data pfmd_tiled_dataset_refined/pf_mdd.yaml
+python train_baseline.py
+```
+
+可用参数：`cbam` = `backbone` / `neck` / `all`，`cbam_reduction` = 通道压缩比（默认 16）。
+
+### 实测验证结果
+
+```
+[1/3] CBAM 模块自检
+  形状不变: True   数值被调整: True   参数量: 610
+
+[2/3] 不同注入位置的参数量
+  基线模型参数: 11,140,244
+  C2f 层索引: [2, 4, 6, 8, 12, 15, 18, 21]
+  where=backbone  CBAM×4  参数 11,184,156 (+43,912)  前向 OK
+  where=neck      CBAM×4  参数 11,191,836 (+51,592)  前向 OK
+  where=all       CBAM×8  参数 11,235,748 (+95,504)  前向 OK
+
+[3/3] 训练器 get_model() 路径
+  Transferred 349/355 items from pretrained weights
+  CBAM 模块数量: 4   包装层索引: [2, 4, 6, 8]
+  总参数 11,184,156   可训练 11,184,140
+  [OK] 预训练权重已加载，CBAM 已注入且全部可训练
+```
+
+另做过一次不训练的 dry-run，确认 `cbam` 参数走 trainer 通道、**不会泄漏**
+进 ultralytics 的配置（否则 `get_cfg()` 会直接报未知键）。
+
+> 验证环境：torch 2.4.1+cpu、ultralytics 8.4.189、Python 3.8、YOLOv8s。
+> **未做**：完整训练的收敛性与精度提升 —— 需在 GPU 机器上跑对照实验才能给出。
+
+---
+
+## 六、已知问题与风险
 
 | 级别 | 问题 | 影响 |
 | --- | --- | --- |
 | 🔴 | 无训练产物（权重 / results.csv / 报告全空） | 无法证明任何技术指标 |
-| 🔴 | 任务书 4.3 只完成 1/2 项改进 | 不满足「至少 2 项」要求 |
+| 🟡 | 两项改进**已实现但未训练验证** | 代码与注入逻辑已自检，但「CBAM 带来多少 mAP 提升」需 GPU 对照实验才能给出 |
 | 🔴 | 任务书 4.4 横向对比完全缺失 | 缺少对比实验章节素材 |
 | 🟠 | 测试集仅 33 框，3 类零样本 | 全类 mAP 统计不可靠 |
 | 🟠 | 训练集每类恰好 320 框（人为造平），78% 为增广副本 | 结论需说明「学到的是缺陷还是增广」 |
@@ -266,23 +361,34 @@ python sliding_window_inference.py \
 
 ---
 
-## 六、后续工作建议（按优先级）
+## 七、后续工作建议（按优先级）
 
-1. **跑通训练并产出基线结果**（最高优先）
+1. **先跑 `tools/verify_cbam.py` 自检**（30 秒）
+2. **跑通训练并产出基线结果**（最高优先）
    - 先用 `epochs=30, imgsz=640` 验证链路，再上 `epochs=200`
    - 产出 `best.pt` 与 `results.csv` 后才能谈指标
-2. **补第二项改进**（推荐 CBAM，改动小、论文好写）
-   - 在 backbone 的 C2f 之后插入 CBAM 模块
-   - 与滑窗推理组成两项改进，正好满足任务书 4.3
-3. **补横向对比**（至少 YOLOv8n/s/m 三档 + 一个非 YOLO 模型）
-4. **论文中诚实交代数据局限**
-   - 明确写出：训练集经增广扩增至 3840 框，测试集保持原始真实分布（33 框，3 类无样本）
-   - 主指标采用 `stable_macro_AP`，并解释为何不直接用全类 mAP
-   - 这比报一个虚高的 mAP 更安全，答辩被追问时也有依据
+3. **做 CBAM 消融**（这是任务书 4.3 的核心证据）
+
+   | 实验 | 命令 |
+   | --- | --- |
+   | 基线 | `python train_baseline.py` |
+   | +CBAM(backbone) | `overrides={'cbam':'backbone'}` |
+   | +CBAM(neck) | `overrides={'cbam':'neck'}` |
+   | +CBAM(all) | `overrides={'cbam':'all'}` |
+
+   四次实验用 `step9_experiment_tracker.py` 自动生成对比表。
+4. **补滑窗推理消融**（任务书 4.3 的第二项证据）
+   - `sliding_window_inference.py --compare-direct` 同时给出「整图直推」与
+     「滑窗融合」的检测数，可直接算召回提升
+5. **补横向对比**（任务书 4.4）
+   - 至少 YOLOv8n/s/m 三档 + 一个非 YOLO 模型（RT-DETR 在 ultralytics 里可直接调用）
+6. **论文中诚实交代数据局限**
+   - 训练集经增广扩增至 3840 框，测试集保持原始真实分布（33 框，3 类无样本）
+   - 主指标采用 `stable_macro_AP`
 
 ---
 
-## 七、仓库说明
+## 八、仓库说明
 
 本仓库**只收录代码与数据集元数据**，未包含大体量二进制与图片：
 
@@ -312,6 +418,6 @@ python step10_expand_refined_train_sim.py
 
 ---
 
-## 八、许可
+## 九、许可
 
 本项目仅用于学习与毕业设计交流，不用于商业用途。

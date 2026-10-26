@@ -258,6 +258,18 @@ def train_baseline_yolov8(overrides=None, model_weights='yolov8s.pt'):
     # `dataset_yaml` and `data` are consumed above to build a normalized YAML path.
     override_dict.pop("dataset_yaml", None)
     override_dict.pop("data", None)
+
+    # CBAM 相关配置不能留在 override_dict 里：ultralytics 的 get_cfg() 会拒绝未知键。
+    # 这里取出来，转成训练器类属性传给 model.train(trainer=...)。
+    cbam_where = override_dict.pop("cbam", None)
+    cbam_reduction = int(override_dict.pop("cbam_reduction", 16))
+    if cbam_where:
+        from modules.cbam_trainer import make_cbam_trainer
+        trainer_cls = make_cbam_trainer(
+            where=cbam_where, reduction=cbam_reduction, kernel_size=7, verbose=True)
+        config["trainer"] = trainer_cls
+        print(f"[INFO] 启用 CBAM 改进：where={cbam_where}, reduction={cbam_reduction}")
+
     if override_dict:
         config.update(override_dict)
     
