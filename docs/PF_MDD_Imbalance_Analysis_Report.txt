@@ -1,0 +1,61 @@
+
+╔══════════════════════════════════════════════════════════════╗
+║           IMMEDIATE ACTIONS (This Week)                       ║
+╠══════════════════════════════════════════════════════════════╣
+║ ✓ Implement Focal Loss in YOLO model                         ║
+║   - Set alpha=0.25, gamma=2.0                                ║
+║   - Monitor loss curves for convergence                      ║
+║                                                              ║
+✓ Calculate balanced class weights                              ║
+║   weight_i = N / (n_classes * count_i)                       ║
+║   Apply to both classification and box regression losses      ║
+║                                                              ║
+✓ Update evaluation pipeline                                    ║
+║   - Track mAP@0.5 and mAP@0.5:0.95                           ║
+║   - Report per-class AP for all 12 categories                 ║
+║   - Generate confusion matrix after each epoch               ║
+╚══════════════════════════════════════════════════════════════╝
+
+╔══════════════════════════════════════════════════════════════╗
+║          SHORT-TERM ACTIONS (Next 2-3 Weeks)                  ║
+╠══════════════════════════════════════════════════════════════╣
+║ ✓ Targeted augmentation for under-represented classes         ║
+║   Priority classes:                                          ║
+║   - CRITICAL: Classes 27, 29, 36 (only 1-6 samples each)     ║
+║   - HIGH: Classes 16, 23, 25 (<30 samples)                   ║
+║                                                              ║
+║   Augmentation strategy:                                     ║
+║   - Generate 20-30 synthetic samples per critical class       ║
+║   - Use Mosaic, MixUp, CutMix combinations                   ║
+║   - Apply domain-specific transforms (if known)              ║
+║                                                              ║
+✓ Implement two-phase training                                  ║
+║   Phase 1 (Epochs 1-100): Balanced subset                     ║
+║   Phase 2 (Epochs 101-150): Full dataset + weights            ║
+║   Reduce LR by 10x at phase transition                       ║
+╚══════════════════════════════════════════════════════════════╝
+
+╔══════════════════════════════════════════════════════════════╗
+║           LONG-TERM OPTIMIZATION (Next Month)                  ║
+╠══════════════════════════════════════════════════════════════╣
+║ ✓ Ensemble multiple models                                   ║
+║   - Train 3-5 models with different seeds/augmentations      ║
+║   - Use weighted voting or NMS for predictions               ║
+║                                                              ║
+✓ Explore semi-supervised approaches                            ║
+║   - Utilize 141 no-defect images as negative samples          ║
+║   - Consider pseudo-labeling confident predictions            ║
+║                                                              ║
+✓ Production deployment considerations                          ║
+║   - Set higher confidence threshold for rare classes          ║
+║   - Implement human-in-the-loop verification                 ║
+║   - Monitor drift in class distribution over time             ║
+╚══════════════════════════════════════════════════════════════╝
+
+📊 SUCCESS METRICS TO TRACK:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+• Overall mAP target: ≥ 75% @ IoU 0.5
+• Minimum per-class AP: ≥ 50% for all classes
+• Critical classes (27, 29, 36): AP ≥ 40%
+• Recall on minority classes: ≥ 70%
+• False Positive Rate: ≤ 5% on normal samples

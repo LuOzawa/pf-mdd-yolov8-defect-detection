@@ -1,0 +1,29 @@
+{
+  "raw_sample_count": 106,
+  "split_raw_counts": {
+    "train": 72,
+    "val": 15,
+    "test": 19
+  },
+  "split_tiled_stats": {
+    "train": {
+      "images": 576,
+      "labels": 86,
+      "boxes": 110,
+      "raw_samples": 72
+    },
+    "val": {
+      "images": 120,
+      "labels": 18,
+      "boxes": 24,
+      "raw_samples": 15
+    },
+    "test": {
+      "images": 152,
+      "labels": 21,
+      "boxes": 25,
+      "raw_samples": 19
+    }
+  },
+  "dataset_yaml": "E:\\work\\26032401\\code1\\pfmd_tiled_dataset\\pf_mdd.yaml"
+}

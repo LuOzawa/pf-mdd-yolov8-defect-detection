@@ -1,0 +1,1992 @@
+{
+  "name": "PF-MDD",
+  "description": "Plastic Film Multi-class Defect Detection Dataset",
+  "resolution": [
+    4096,
+    256
+  ],
+  "created_at": "2026-04-18 09:12:09",
+  "defect_samples": [
+    {
+      "id": "0001_002_00",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0001_002_00.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0001_002_00_mask.png"
+      ],
+      "defect_type": 2,
+      "has_defect": true
+    },
+    {
+      "id": "0002_002_00",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0002_002_00.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0002_002_00_mask.png"
+      ],
+      "defect_type": 2,
+      "has_defect": true
+    },
+    {
+      "id": "0003_002_00",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0003_002_00.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0003_002_00_mask.png"
+      ],
+      "defect_type": 2,
+      "has_defect": true
+    },
+    {
+      "id": "0004_002_01",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0004_002_01.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0004_002_01_mask.png"
+      ],
+      "defect_type": 2,
+      "has_defect": true
+    },
+    {
+      "id": "0005_002_01",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0005_002_01.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0005_002_01_mask.png"
+      ],
+      "defect_type": 2,
+      "has_defect": true
+    },
+    {
+      "id": "0006_002_01",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0006_002_01.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0006_002_01_mask.png"
+      ],
+      "defect_type": 2,
+      "has_defect": true
+    },
+    {
+      "id": "0010_006_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0010_006_02.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0010_006_02_mask.png"
+      ],
+      "defect_type": 6,
+      "has_defect": true
+    },
+    {
+      "id": "0011_006_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0011_006_02.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0011_006_02_mask.png"
+      ],
+      "defect_type": 6,
+      "has_defect": true
+    },
+    {
+      "id": "0012_006_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0012_006_02.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0012_006_02_mask.png"
+      ],
+      "defect_type": 6,
+      "has_defect": true
+    },
+    {
+      "id": "0013_006_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0013_006_02.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0013_006_02_mask.png"
+      ],
+      "defect_type": 6,
+      "has_defect": true
+    },
+    {
+      "id": "0014_006_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0014_006_02.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0014_006_02_mask.png"
+      ],
+      "defect_type": 6,
+      "has_defect": true
+    },
+    {
+      "id": "0015_006_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0015_006_02.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0015_006_02_mask.png"
+      ],
+      "defect_type": 6,
+      "has_defect": true
+    },
+    {
+      "id": "0016_006_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0016_006_02.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0016_006_02_mask.png"
+      ],
+      "defect_type": 6,
+      "has_defect": true
+    },
+    {
+      "id": "0017_002_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0017_002_02.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0017_002_02_mask.png"
+      ],
+      "defect_type": 2,
+      "has_defect": true
+    },
+    {
+      "id": "0018_010_03",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0018_010_03.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0018_010_03_mask.png"
+      ],
+      "defect_type": 10,
+      "has_defect": true
+    },
+    {
+      "id": "0019_016_03",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0019_016_03.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0019_016_03_mask.png"
+      ],
+      "defect_type": 16,
+      "has_defect": true
+    },
+    {
+      "id": "0020_016_03",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0020_016_03.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0020_016_03_mask.png"
+      ],
+      "defect_type": 16,
+      "has_defect": true
+    },
+    {
+      "id": "0021_016_03",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0021_016_03.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0021_016_03_mask.png"
+      ],
+      "defect_type": 16,
+      "has_defect": true
+    },
+    {
+      "id": "0022_019_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0022_019_02.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0022_019_02_mask.png"
+      ],
+      "defect_type": 19,
+      "has_defect": true
+    },
+    {
+      "id": "0023_019_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0023_019_02.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0023_019_02_mask.png"
+      ],
+      "defect_type": 19,
+      "has_defect": true
+    },
+    {
+      "id": "0024_019_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0024_019_02.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0024_019_02_mask.png"
+      ],
+      "defect_type": 19,
+      "has_defect": true
+    },
+    {
+      "id": "0025_019_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0025_019_02.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0025_019_02_mask.png"
+      ],
+      "defect_type": 19,
+      "has_defect": true
+    },
+    {
+      "id": "0026_019_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0026_019_02.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0026_019_02_mask.png"
+      ],
+      "defect_type": 19,
+      "has_defect": true
+    },
+    {
+      "id": "0027_019_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0027_019_02.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0027_019_02_mask.png"
+      ],
+      "defect_type": 19,
+      "has_defect": true
+    },
+    {
+      "id": "0028_019_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0028_019_02.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0028_019_02_mask.png"
+      ],
+      "defect_type": 19,
+      "has_defect": true
+    },
+    {
+      "id": "0029_019_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0029_019_02.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0029_019_02_mask.png"
+      ],
+      "defect_type": 19,
+      "has_defect": true
+    },
+    {
+      "id": "0030_019_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0030_019_02.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0030_019_02_mask.png"
+      ],
+      "defect_type": 19,
+      "has_defect": true
+    },
+    {
+      "id": "0031_019_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0031_019_02.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0031_019_02_mask.png"
+      ],
+      "defect_type": 19,
+      "has_defect": true
+    },
+    {
+      "id": "0032_019_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0032_019_02.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0032_019_02_mask.png"
+      ],
+      "defect_type": 19,
+      "has_defect": true
+    },
+    {
+      "id": "0033_019_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0033_019_02.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0033_019_02_mask.png"
+      ],
+      "defect_type": 19,
+      "has_defect": true
+    },
+    {
+      "id": "0034_019_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0034_019_02.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0034_019_02_mask.png"
+      ],
+      "defect_type": 19,
+      "has_defect": true
+    },
+    {
+      "id": "0035_019_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0035_019_02.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0035_019_02_mask.png"
+      ],
+      "defect_type": 19,
+      "has_defect": true
+    },
+    {
+      "id": "0036_019_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0036_019_02.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0036_019_02_mask.png"
+      ],
+      "defect_type": 19,
+      "has_defect": true
+    },
+    {
+      "id": "0037_019_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0037_019_02.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0037_019_02_mask.png"
+      ],
+      "defect_type": 19,
+      "has_defect": true
+    },
+    {
+      "id": "0038_019_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0038_019_02.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0038_019_02_mask.png"
+      ],
+      "defect_type": 19,
+      "has_defect": true
+    },
+    {
+      "id": "0039_019_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0039_019_02.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0039_019_02_mask.png"
+      ],
+      "defect_type": 19,
+      "has_defect": true
+    },
+    {
+      "id": "0040_019_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0040_019_02.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0040_019_02_mask.png"
+      ],
+      "defect_type": 19,
+      "has_defect": true
+    },
+    {
+      "id": "0041_019_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0041_019_02.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0041_019_02_mask.png"
+      ],
+      "defect_type": 19,
+      "has_defect": true
+    },
+    {
+      "id": "0042_019_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0042_019_02.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0042_019_02_mask.png"
+      ],
+      "defect_type": 19,
+      "has_defect": true
+    },
+    {
+      "id": "0043_019_04",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0043_019_04.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0043_019_04_mask.png"
+      ],
+      "defect_type": 19,
+      "has_defect": true
+    },
+    {
+      "id": "0044_019_04",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0044_019_04.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0044_019_04_mask1.png",
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0044_019_04_mask2.png"
+      ],
+      "defect_type": 19,
+      "has_defect": true
+    },
+    {
+      "id": "0045_019_04",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0045_019_04.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0045_019_04_mask.png"
+      ],
+      "defect_type": 19,
+      "has_defect": true
+    },
+    {
+      "id": "0046_019_04",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0046_019_04.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0046_019_04_mask.png"
+      ],
+      "defect_type": 19,
+      "has_defect": true
+    },
+    {
+      "id": "0047_019_04",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0047_019_04.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0047_019_04_mask.png"
+      ],
+      "defect_type": 19,
+      "has_defect": true
+    },
+    {
+      "id": "0048_019_04",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0048_019_04.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0048_019_04_mask.png"
+      ],
+      "defect_type": 19,
+      "has_defect": true
+    },
+    {
+      "id": "0049_030_03",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0049_030_03.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0049_030_03_mask.png"
+      ],
+      "defect_type": 30,
+      "has_defect": true
+    },
+    {
+      "id": "0050_019_03",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0050_019_03.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0050_019_03_mask.png"
+      ],
+      "defect_type": 19,
+      "has_defect": true
+    },
+    {
+      "id": "0051_019_03",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0051_019_03.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0051_019_03_mask.png"
+      ],
+      "defect_type": 19,
+      "has_defect": true
+    },
+    {
+      "id": "0052_019_03",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0052_019_03.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0052_019_03_mask.png"
+      ],
+      "defect_type": 19,
+      "has_defect": true
+    },
+    {
+      "id": "0053_019_03",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0053_019_03.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0053_019_03_mask.png"
+      ],
+      "defect_type": 19,
+      "has_defect": true
+    },
+    {
+      "id": "0054_019_03",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0054_019_03.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0054_019_03_mask.png"
+      ],
+      "defect_type": 19,
+      "has_defect": true
+    },
+    {
+      "id": "0055_019_06",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0055_019_06.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0055_019_06_mask.png"
+      ],
+      "defect_type": 19,
+      "has_defect": true
+    },
+    {
+      "id": "0056_019_06",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0056_019_06.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0056_019_06_mask.png"
+      ],
+      "defect_type": 19,
+      "has_defect": true
+    },
+    {
+      "id": "0057_019_06",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0057_019_06.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0057_019_06_mask.png"
+      ],
+      "defect_type": 19,
+      "has_defect": true
+    },
+    {
+      "id": "0058_019_06",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0058_019_06.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0058_019_06_mask.png"
+      ],
+      "defect_type": 19,
+      "has_defect": true
+    },
+    {
+      "id": "0059_019_01",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0059_019_01.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0059_019_01_mask.png"
+      ],
+      "defect_type": 19,
+      "has_defect": true
+    },
+    {
+      "id": "0060_022_06",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0060_022_06.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0060_022_06_mask.png"
+      ],
+      "defect_type": 22,
+      "has_defect": true
+    },
+    {
+      "id": "0061_022_06",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0061_022_06.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0061_022_06_mask.png"
+      ],
+      "defect_type": 22,
+      "has_defect": true
+    },
+    {
+      "id": "0062_022_00",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0062_022_00.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0062_022_00_mask.png"
+      ],
+      "defect_type": 22,
+      "has_defect": true
+    },
+    {
+      "id": "0063_022_00",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0063_022_00.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0063_022_00_mask.png"
+      ],
+      "defect_type": 22,
+      "has_defect": true
+    },
+    {
+      "id": "0064_022_00",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0064_022_00.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0064_022_00_mask.png"
+      ],
+      "defect_type": 22,
+      "has_defect": true
+    },
+    {
+      "id": "0065_022_00",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0065_022_00.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0065_022_00_mask.png"
+      ],
+      "defect_type": 22,
+      "has_defect": true
+    },
+    {
+      "id": "0066_023_01",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0066_023_01.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0066_023_01_mask.png"
+      ],
+      "defect_type": 23,
+      "has_defect": true
+    },
+    {
+      "id": "0067_023_01",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0067_023_01.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0067_023_01_mask.png"
+      ],
+      "defect_type": 23,
+      "has_defect": true
+    },
+    {
+      "id": "0068_023_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0068_023_02.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0068_023_02_mask.png"
+      ],
+      "defect_type": 23,
+      "has_defect": true
+    },
+    {
+      "id": "0069_023_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0069_023_02.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0069_023_02_mask.png"
+      ],
+      "defect_type": 23,
+      "has_defect": true
+    },
+    {
+      "id": "0070_023_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0070_023_02.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0070_023_02_mask.png"
+      ],
+      "defect_type": 23,
+      "has_defect": true
+    },
+    {
+      "id": "0071_030_03",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0071_030_03.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0071_030_03_mask.png"
+      ],
+      "defect_type": 30,
+      "has_defect": true
+    },
+    {
+      "id": "0072_010_03",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0072_010_03.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0072_010_03_mask.png"
+      ],
+      "defect_type": 10,
+      "has_defect": true
+    },
+    {
+      "id": "0073_010_03",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0073_010_03.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0073_010_03_mask.png"
+      ],
+      "defect_type": 10,
+      "has_defect": true
+    },
+    {
+      "id": "0074_010_03",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0074_010_03.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0074_010_03_mask.png"
+      ],
+      "defect_type": 10,
+      "has_defect": true
+    },
+    {
+      "id": "0075_010_03",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0075_010_03.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0075_010_03_mask.png"
+      ],
+      "defect_type": 10,
+      "has_defect": true
+    },
+    {
+      "id": "0076_030_03",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0076_030_03.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0076_030_03_mask.png"
+      ],
+      "defect_type": 30,
+      "has_defect": true
+    },
+    {
+      "id": "0077_022_03",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0077_022_03.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0077_022_03_mask.png"
+      ],
+      "defect_type": 22,
+      "has_defect": true
+    },
+    {
+      "id": "0078_025_03",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0078_025_03.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0078_025_03_mask.png"
+      ],
+      "defect_type": 25,
+      "has_defect": true
+    },
+    {
+      "id": "0079_025_03",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0079_025_03.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0079_025_03_mask.png"
+      ],
+      "defect_type": 25,
+      "has_defect": true
+    },
+    {
+      "id": "0080_036_01",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0080_036_01.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0080_036_01_mask.png"
+      ],
+      "defect_type": 36,
+      "has_defect": true
+    },
+    {
+      "id": "0081_006_04",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0081_006_04.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0081_006_04_mask.png"
+      ],
+      "defect_type": 6,
+      "has_defect": true
+    },
+    {
+      "id": "0082_030_04",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0082_030_04.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0082_030_04_mask.png"
+      ],
+      "defect_type": 30,
+      "has_defect": true
+    },
+    {
+      "id": "0083_029_04",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0083_029_04.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0083_029_04_mask.png"
+      ],
+      "defect_type": 29,
+      "has_defect": true
+    },
+    {
+      "id": "0084_030_04",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0084_030_04.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0084_030_04_mask.png"
+      ],
+      "defect_type": 30,
+      "has_defect": true
+    },
+    {
+      "id": "0085_030_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0085_030_02.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0085_030_02_mask.png"
+      ],
+      "defect_type": 30,
+      "has_defect": true
+    },
+    {
+      "id": "0086_030_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0086_030_02.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0086_030_02_mask.png"
+      ],
+      "defect_type": 30,
+      "has_defect": true
+    },
+    {
+      "id": "0087_030_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0087_030_02.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0087_030_02_mask.png"
+      ],
+      "defect_type": 30,
+      "has_defect": true
+    },
+    {
+      "id": "0088_030_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0088_030_02.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0088_030_02_mask.png"
+      ],
+      "defect_type": 30,
+      "has_defect": true
+    },
+    {
+      "id": "0089_002_01",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0089_002_01.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0089_002_01_mask.png"
+      ],
+      "defect_type": 2,
+      "has_defect": true
+    },
+    {
+      "id": "0090_002_01",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0090_002_01.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0090_002_01_mask.png"
+      ],
+      "defect_type": 2,
+      "has_defect": true
+    },
+    {
+      "id": "0091_030_01",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0091_030_01.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0091_030_01_mask.png"
+      ],
+      "defect_type": 30,
+      "has_defect": true
+    },
+    {
+      "id": "0092_030_01",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0092_030_01.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0092_030_01_mask.png"
+      ],
+      "defect_type": 30,
+      "has_defect": true
+    },
+    {
+      "id": "0093_030_01",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0093_030_01.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0093_030_01_mask.png"
+      ],
+      "defect_type": 30,
+      "has_defect": true
+    },
+    {
+      "id": "0094_027_05",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0094_027_05.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0094_027_05_mask.png"
+      ],
+      "defect_type": 27,
+      "has_defect": true
+    },
+    {
+      "id": "0095_010_03",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0095_010_03.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0095_010_03_mask.png"
+      ],
+      "defect_type": 10,
+      "has_defect": true
+    },
+    {
+      "id": "0096_030_03",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0096_030_03.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0096_030_03_mask.png"
+      ],
+      "defect_type": 30,
+      "has_defect": true
+    },
+    {
+      "id": "0097_030_03",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0097_030_03.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0097_030_03_mask1.png",
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0097_030_03_mask2.png"
+      ],
+      "defect_type": 30,
+      "has_defect": true
+    },
+    {
+      "id": "0098_019_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0098_019_02.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0098_019_02_mask.png"
+      ],
+      "defect_type": 19,
+      "has_defect": true
+    },
+    {
+      "id": "0099_019_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0099_019_02.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0099_019_02_mask.png"
+      ],
+      "defect_type": 19,
+      "has_defect": true
+    },
+    {
+      "id": "0100_025_08",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0100_025_08.png",
+      "mask_paths": [],
+      "defect_type": 25,
+      "has_defect": true
+    },
+    {
+      "id": "0101_022_03",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0101_022_03.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0101_022_03_mask.png"
+      ],
+      "defect_type": 22,
+      "has_defect": true
+    },
+    {
+      "id": "0102_010_03",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0102_010_03.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0102_010_03_mask.png"
+      ],
+      "defect_type": 10,
+      "has_defect": true
+    },
+    {
+      "id": "0103_010_03",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0103_010_03.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0103_010_03_mask.png"
+      ],
+      "defect_type": 10,
+      "has_defect": true
+    },
+    {
+      "id": "0104_022_03",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0104_022_03.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0104_022_03_mask.png"
+      ],
+      "defect_type": 22,
+      "has_defect": true
+    },
+    {
+      "id": "0105_010_03",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0105_010_03.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0105_010_03_mask.png"
+      ],
+      "defect_type": 10,
+      "has_defect": true
+    },
+    {
+      "id": "0106_010_03",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0106_010_03.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0106_010_03_mask.png"
+      ],
+      "defect_type": 10,
+      "has_defect": true
+    },
+    {
+      "id": "0107_025_03",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0107_025_03.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0107_025_03_mask.png"
+      ],
+      "defect_type": 25,
+      "has_defect": true
+    },
+    {
+      "id": "0108_025_03",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0108_025_03.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0108_025_03_mask.png"
+      ],
+      "defect_type": 25,
+      "has_defect": true
+    },
+    {
+      "id": "0109_025_03",
+      "image_path": "E:\\work\\26032401\\code1\\data\\Defect_images\\Defect_images\\0109_025_03.png",
+      "mask_paths": [
+        "E:\\work\\26032401\\code1\\data\\Mask_images\\Mask_images\\0109_025_03_mask.png"
+      ],
+      "defect_type": 25,
+      "has_defect": true
+    }
+  ],
+  "nodefect_samples": [
+    {
+      "id": "0001_000_05",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2306881-210020u\\0001_000_05.png",
+      "source_folder": "2306881-210020u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0002_000_05",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2306881-210020u\\0002_000_05.png",
+      "source_folder": "2306881-210020u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0003_000_05",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2306881-210020u\\0003_000_05.png",
+      "source_folder": "2306881-210020u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0004_000_05",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2306881-210020u\\0004_000_05.png",
+      "source_folder": "2306881-210020u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0005_000_05",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2306881-210020u\\0005_000_05.png",
+      "source_folder": "2306881-210020u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0006_000_05",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2306881-210020u\\0006_000_05.png",
+      "source_folder": "2306881-210020u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0007_000_05",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2306881-210020u\\0007_000_05.png",
+      "source_folder": "2306881-210020u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0008_000_05",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2306881-210020u\\0008_000_05.png",
+      "source_folder": "2306881-210020u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0009_000_05",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2306881-210020u\\0009_000_05.png",
+      "source_folder": "2306881-210020u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0010_000_05",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2306881-210020u\\0010_000_05.png",
+      "source_folder": "2306881-210020u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0011_000_05",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2306881-210020u\\0011_000_05.png",
+      "source_folder": "2306881-210020u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0012_000_05",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2306881-210020u\\0012_000_05.png",
+      "source_folder": "2306881-210020u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0013_000_05",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2306881-210020u\\0013_000_05.png",
+      "source_folder": "2306881-210020u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0014_000_05",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2306881-210020u\\0014_000_05.png",
+      "source_folder": "2306881-210020u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0015_000_05",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2306881-210020u\\0015_000_05.png",
+      "source_folder": "2306881-210020u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0016_000_05",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2306881-210020u\\0016_000_05.png",
+      "source_folder": "2306881-210020u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0017_000_05",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2306881-210020u\\0017_000_05.png",
+      "source_folder": "2306881-210020u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0018_000_05",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2306881-210020u\\0018_000_05.png",
+      "source_folder": "2306881-210020u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0019_000_05",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2306881-210020u\\0019_000_05.png",
+      "source_folder": "2306881-210020u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0020_000_05",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2306881-210020u\\0020_000_05.png",
+      "source_folder": "2306881-210020u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0001_000_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2306894-210033u\\0001_000_02.png",
+      "source_folder": "2306894-210033u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0002_000_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2306894-210033u\\0002_000_02.png",
+      "source_folder": "2306894-210033u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0003_000_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2306894-210033u\\0003_000_02.png",
+      "source_folder": "2306894-210033u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0004_000_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2306894-210033u\\0004_000_02.png",
+      "source_folder": "2306894-210033u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0005_000_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2306894-210033u\\0005_000_02.png",
+      "source_folder": "2306894-210033u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0006_000_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2306894-210033u\\0006_000_02.png",
+      "source_folder": "2306894-210033u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0007_000_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2306894-210033u\\0007_000_02.png",
+      "source_folder": "2306894-210033u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0008_000_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2306894-210033u\\0008_000_02.png",
+      "source_folder": "2306894-210033u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0009_000_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2306894-210033u\\0009_000_02.png",
+      "source_folder": "2306894-210033u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0010_000_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2306894-210033u\\0010_000_02.png",
+      "source_folder": "2306894-210033u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0011_000_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2306894-210033u\\0011_000_02.png",
+      "source_folder": "2306894-210033u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0012_000_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2306894-210033u\\0012_000_02.png",
+      "source_folder": "2306894-210033u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0013_000_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2306894-210033u\\0013_000_02.png",
+      "source_folder": "2306894-210033u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0014_000_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2306894-210033u\\0014_000_02.png",
+      "source_folder": "2306894-210033u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0015_000_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2306894-210033u\\0015_000_02.png",
+      "source_folder": "2306894-210033u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0016_000_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2306894-210033u\\0016_000_02.png",
+      "source_folder": "2306894-210033u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0017_000_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2306894-210033u\\0017_000_02.png",
+      "source_folder": "2306894-210033u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0018_000_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2306894-210033u\\0018_000_02.png",
+      "source_folder": "2306894-210033u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0019_000_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2306894-210033u\\0019_000_02.png",
+      "source_folder": "2306894-210033u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0020_000_02",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2306894-210033u\\0020_000_02.png",
+      "source_folder": "2306894-210033u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0001_000_04",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311517-195063u\\0001_000_04.png",
+      "source_folder": "2311517-195063u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0002_000_04",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311517-195063u\\0002_000_04.png",
+      "source_folder": "2311517-195063u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0003_000_04",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311517-195063u\\0003_000_04.png",
+      "source_folder": "2311517-195063u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0004_000_04",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311517-195063u\\0004_000_04.png",
+      "source_folder": "2311517-195063u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0005_000_04",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311517-195063u\\0005_000_04.png",
+      "source_folder": "2311517-195063u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0006_000_04",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311517-195063u\\0006_000_04.png",
+      "source_folder": "2311517-195063u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0007_000_04",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311517-195063u\\0007_000_04.png",
+      "source_folder": "2311517-195063u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0008_000_04",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311517-195063u\\0008_000_04.png",
+      "source_folder": "2311517-195063u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0009_000_04",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311517-195063u\\0009_000_04.png",
+      "source_folder": "2311517-195063u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0010_000_04",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311517-195063u\\0010_000_04.png",
+      "source_folder": "2311517-195063u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0011_000_04",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311517-195063u\\0011_000_04.png",
+      "source_folder": "2311517-195063u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0012_000_04",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311517-195063u\\0012_000_04.png",
+      "source_folder": "2311517-195063u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0013_000_04",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311517-195063u\\0013_000_04.png",
+      "source_folder": "2311517-195063u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0014_000_04",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311517-195063u\\0014_000_04.png",
+      "source_folder": "2311517-195063u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0015_000_04",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311517-195063u\\0015_000_04.png",
+      "source_folder": "2311517-195063u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0016_000_04",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311517-195063u\\0016_000_04.png",
+      "source_folder": "2311517-195063u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0017_000_04",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311517-195063u\\0017_000_04.png",
+      "source_folder": "2311517-195063u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0018_000_04",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311517-195063u\\0018_000_04.png",
+      "source_folder": "2311517-195063u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0019_000_04",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311517-195063u\\0019_000_04.png",
+      "source_folder": "2311517-195063u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0020_000_04",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311517-195063u\\0020_000_04.png",
+      "source_folder": "2311517-195063u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0001_000_03",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311694-1930c7u\\0001_000_03.png",
+      "source_folder": "2311694-1930c7u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0002_000_03",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311694-1930c7u\\0002_000_03.png",
+      "source_folder": "2311694-1930c7u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0003_000_03",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311694-1930c7u\\0003_000_03.png",
+      "source_folder": "2311694-1930c7u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0004_000_03",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311694-1930c7u\\0004_000_03.png",
+      "source_folder": "2311694-1930c7u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0005_000_03",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311694-1930c7u\\0005_000_03.png",
+      "source_folder": "2311694-1930c7u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0006_000_03",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311694-1930c7u\\0006_000_03.png",
+      "source_folder": "2311694-1930c7u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0007_000_03",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311694-1930c7u\\0007_000_03.png",
+      "source_folder": "2311694-1930c7u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0008_000_03",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311694-1930c7u\\0008_000_03.png",
+      "source_folder": "2311694-1930c7u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0009_000_03",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311694-1930c7u\\0009_000_03.png",
+      "source_folder": "2311694-1930c7u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0010_000_03",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311694-1930c7u\\0010_000_03.png",
+      "source_folder": "2311694-1930c7u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0011_000_03",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311694-1930c7u\\0011_000_03.png",
+      "source_folder": "2311694-1930c7u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0012_000_03",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311694-1930c7u\\0012_000_03.png",
+      "source_folder": "2311694-1930c7u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0013_000_03",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311694-1930c7u\\0013_000_03.png",
+      "source_folder": "2311694-1930c7u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0014_000_03",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311694-1930c7u\\0014_000_03.png",
+      "source_folder": "2311694-1930c7u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0015_000_03",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311694-1930c7u\\0015_000_03.png",
+      "source_folder": "2311694-1930c7u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0016_000_03",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311694-1930c7u\\0016_000_03.png",
+      "source_folder": "2311694-1930c7u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0017_000_03",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311694-1930c7u\\0017_000_03.png",
+      "source_folder": "2311694-1930c7u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0018_000_03",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311694-1930c7u\\0018_000_03.png",
+      "source_folder": "2311694-1930c7u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0019_000_03",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311694-1930c7u\\0019_000_03.png",
+      "source_folder": "2311694-1930c7u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0020_000_03",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311694-1930c7u\\0020_000_03.png",
+      "source_folder": "2311694-1930c7u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0001_000_00",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311694-2040n7u\\0001_000_00.png",
+      "source_folder": "2311694-2040n7u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0002_000_00",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311694-2040n7u\\0002_000_00.png",
+      "source_folder": "2311694-2040n7u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0003_000_00",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311694-2040n7u\\0003_000_00.png",
+      "source_folder": "2311694-2040n7u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0004_000_00",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311694-2040n7u\\0004_000_00.png",
+      "source_folder": "2311694-2040n7u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0005_000_00",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311694-2040n7u\\0005_000_00.png",
+      "source_folder": "2311694-2040n7u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0006_000_00",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311694-2040n7u\\0006_000_00.png",
+      "source_folder": "2311694-2040n7u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0007_000_00",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311694-2040n7u\\0007_000_00.png",
+      "source_folder": "2311694-2040n7u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0008_000_00",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311694-2040n7u\\0008_000_00.png",
+      "source_folder": "2311694-2040n7u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0009_000_00",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311694-2040n7u\\0009_000_00.png",
+      "source_folder": "2311694-2040n7u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0010_000_00",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311694-2040n7u\\0010_000_00.png",
+      "source_folder": "2311694-2040n7u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0011_000_00",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311694-2040n7u\\0011_000_00.png",
+      "source_folder": "2311694-2040n7u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0012_000_00",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311694-2040n7u\\0012_000_00.png",
+      "source_folder": "2311694-2040n7u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0013_000_00",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311694-2040n7u\\0013_000_00.png",
+      "source_folder": "2311694-2040n7u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0014_000_00",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311694-2040n7u\\0014_000_00.png",
+      "source_folder": "2311694-2040n7u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0015_000_00",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311694-2040n7u\\0015_000_00.png",
+      "source_folder": "2311694-2040n7u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0016_000_00",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311694-2040n7u\\0016_000_00.png",
+      "source_folder": "2311694-2040n7u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0017_000_00",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311694-2040n7u\\0017_000_00.png",
+      "source_folder": "2311694-2040n7u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0018_000_00",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311694-2040n7u\\0018_000_00.png",
+      "source_folder": "2311694-2040n7u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0019_000_00",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311694-2040n7u\\0019_000_00.png",
+      "source_folder": "2311694-2040n7u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0020_000_00",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311694-2040n7u\\0020_000_00.png",
+      "source_folder": "2311694-2040n7u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0001_000_06",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311980-185026u\\0001_000_06.png",
+      "source_folder": "2311980-185026u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0002_000_06",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311980-185026u\\0002_000_06.png",
+      "source_folder": "2311980-185026u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0003_000_06",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311980-185026u\\0003_000_06.png",
+      "source_folder": "2311980-185026u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0004_000_06",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311980-185026u\\0004_000_06.png",
+      "source_folder": "2311980-185026u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0005_000_06",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311980-185026u\\0005_000_06.png",
+      "source_folder": "2311980-185026u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0006_000_06",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311980-185026u\\0006_000_06.png",
+      "source_folder": "2311980-185026u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0007_000_06",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311980-185026u\\0007_000_06.png",
+      "source_folder": "2311980-185026u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0008_000_06",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311980-185026u\\0008_000_06.png",
+      "source_folder": "2311980-185026u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0009_000_06",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311980-185026u\\0009_000_06.png",
+      "source_folder": "2311980-185026u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0010_000_06",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311980-185026u\\0010_000_06.png",
+      "source_folder": "2311980-185026u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0011_000_06",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311980-185026u\\0011_000_06.png",
+      "source_folder": "2311980-185026u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0012_000_06",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311980-185026u\\0012_000_06.png",
+      "source_folder": "2311980-185026u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0013_000_06",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311980-185026u\\0013_000_06.png",
+      "source_folder": "2311980-185026u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0014_000_06",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311980-185026u\\0014_000_06.png",
+      "source_folder": "2311980-185026u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0015_000_06",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311980-185026u\\0015_000_06.png",
+      "source_folder": "2311980-185026u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0016_000_06",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311980-185026u\\0016_000_06.png",
+      "source_folder": "2311980-185026u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0017_000_06",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311980-185026u\\0017_000_06.png",
+      "source_folder": "2311980-185026u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0018_000_06",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311980-185026u\\0018_000_06.png",
+      "source_folder": "2311980-185026u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0019_000_06",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311980-185026u\\0019_000_06.png",
+      "source_folder": "2311980-185026u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0020_000_06",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2311980-185026u\\0020_000_06.png",
+      "source_folder": "2311980-185026u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0001_000_01",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2608691-202020u\\0001_000_01.png",
+      "source_folder": "2608691-202020u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0002_000_01",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2608691-202020u\\0002_000_01.png",
+      "source_folder": "2608691-202020u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0003_000_01",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2608691-202020u\\0003_000_01.png",
+      "source_folder": "2608691-202020u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0004_000_01",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2608691-202020u\\0004_000_01.png",
+      "source_folder": "2608691-202020u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0005_000_01",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2608691-202020u\\0005_000_01.png",
+      "source_folder": "2608691-202020u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0006_000_01",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2608691-202020u\\0006_000_01.png",
+      "source_folder": "2608691-202020u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0007_000_01",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2608691-202020u\\0007_000_01.png",
+      "source_folder": "2608691-202020u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0008_000_01",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2608691-202020u\\0008_000_01.png",
+      "source_folder": "2608691-202020u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0009_000_01",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2608691-202020u\\0009_000_01.png",
+      "source_folder": "2608691-202020u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0010_000_01",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2608691-202020u\\0010_000_01.png",
+      "source_folder": "2608691-202020u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0011_000_01",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2608691-202020u\\0011_000_01.png",
+      "source_folder": "2608691-202020u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0012_000_01",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2608691-202020u\\0012_000_01.png",
+      "source_folder": "2608691-202020u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0013_000_01",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2608691-202020u\\0013_000_01.png",
+      "source_folder": "2608691-202020u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0014_000_01",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2608691-202020u\\0014_000_01.png",
+      "source_folder": "2608691-202020u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0015_000_01",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2608691-202020u\\0015_000_01.png",
+      "source_folder": "2608691-202020u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0016_000_01",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2608691-202020u\\0016_000_01.png",
+      "source_folder": "2608691-202020u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0017_000_01",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2608691-202020u\\0017_000_01.png",
+      "source_folder": "2608691-202020u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0018_000_01",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2608691-202020u\\0018_000_01.png",
+      "source_folder": "2608691-202020u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0018_00_01",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2608691-202020u\\0018_00_01.png",
+      "source_folder": "2608691-202020u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0019_000_01",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2608691-202020u\\0019_000_01.png",
+      "source_folder": "2608691-202020u",
+      "defect_type": 0,
+      "has_defect": false
+    },
+    {
+      "id": "0020_000_01",
+      "image_path": "E:\\work\\26032401\\code1\\data\\NODefect_images\\NODefect_images\\2608691-202020u\\0020_000_01.png",
+      "source_folder": "2608691-202020u",
+      "defect_type": 0,
+      "has_defect": false
+    }
+  ],
+  "statistics": {
+    "defect_types": {
+      "2": 9,
+      "6": 8,
+      "10": 10,
+      "16": 3,
+      "19": 39,
+      "30": 14,
+      "22": 9,
+      "23": 5,
+      "25": 6,
+      "36": 1,
+      "29": 1,
+      "27": 1
+    },
+    "nodefect_folders": {
+      "2306881-210020u": 20,
+      "2306894-210033u": 20,
+      "2311517-195063u": 20,
+      "2311694-1930c7u": 20,
+      "2311694-2040n7u": 20,
+      "2311980-185026u": 20,
+      "2608691-202020u": 21
+    },
+    "integrity_issues": [
+      "Missing masks for 1 samples"
+    ]
+  },
+  "summary": {
+    "dataset_name": "PF-MDD",
+    "total_samples": 247,
+    "defect_samples": 106,
+    "nodefect_samples": 141,
+    "num_defect_types": 12,
+    "resolution": "4096x256",
+    "defect_ratio": "42.9%",
+    "has_multi_defect_samples": true
+  }
+}

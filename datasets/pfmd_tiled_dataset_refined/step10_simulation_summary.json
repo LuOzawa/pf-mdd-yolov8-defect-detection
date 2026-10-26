@@ -1,0 +1,60 @@
+{
+  "dataset_dir": "pfmd_tiled_dataset_refined",
+  "target_boxes_per_class": 320,
+  "max_new_images": 7000,
+  "background_ratio": 0.25,
+  "before_train_images": 959,
+  "before_train_labels": 518,
+  "after_train_images": 4451,
+  "after_train_labels": 3312,
+  "before_train_box_counts": {
+    "0": 50,
+    "1": 50,
+    "2": 50,
+    "3": 50,
+    "4": 50,
+    "5": 50,
+    "6": 50,
+    "7": 50,
+    "8": 50,
+    "9": 50,
+    "10": 50,
+    "11": 50
+  },
+  "after_train_box_counts": {
+    "0": 320,
+    "1": 320,
+    "2": 320,
+    "3": 320,
+    "4": 320,
+    "5": 320,
+    "6": 320,
+    "7": 320,
+    "8": 320,
+    "9": 320,
+    "10": 320,
+    "11": 320
+  },
+  "positive_simulation": {
+    "added_positive_images": 2794,
+    "added_images_per_focus_class": {
+      "0": 270,
+      "1": 135,
+      "2": 270,
+      "3": 135,
+      "4": 256,
+      "5": 270,
+      "6": 270,
+      "7": 270,
+      "8": 135,
+      "9": 270,
+      "10": 243,
+      "11": 270
+    },
+    "impossible_classes": []
+  },
+  "background_simulation": {
+    "added_background_images": 698,
+    "target_background_additions": 698
+  }
+}

@@ -1,0 +1,234 @@
+{
+  "source_dataset": "E:\\work\\26032401\\code1\\pfmd_tiled_dataset",
+  "output_dataset": "E:\\work\\26032401\\code1\\pfmd_tiled_dataset_refined",
+  "min_train_boxes_per_class": 50,
+  "image_counts": {
+    "train": 959,
+    "val": 152,
+    "test": 145
+  },
+  "augmented_image_counts": {
+    "train": 445,
+    "val": 0,
+    "test": 0
+  },
+  "label_counts": {
+    "train": 518,
+    "val": 28,
+    "test": 24
+  },
+  "pre_boost_box_counts": {
+    "train": {
+      "0": 6,
+      "1": 2,
+      "2": 6,
+      "3": 2,
+      "4": 36,
+      "5": 7,
+      "6": 2,
+      "7": 3,
+      "8": 2,
+      "9": 2,
+      "10": 10,
+      "11": 1
+    },
+    "val": {
+      "0": 2,
+      "1": 16,
+      "2": 4,
+      "3": 1,
+      "4": 12,
+      "5": 1,
+      "6": 1,
+      "7": 1,
+      "10": 9
+    },
+    "test": {
+      "0": 3,
+      "1": 15,
+      "2": 2,
+      "3": 1,
+      "4": 7,
+      "5": 1,
+      "6": 2,
+      "7": 1,
+      "10": 1
+    }
+  },
+  "post_boost_box_counts": {
+    "train": {
+      "0": 50,
+      "1": 50,
+      "2": 50,
+      "3": 50,
+      "4": 50,
+      "5": 50,
+      "6": 50,
+      "7": 50,
+      "8": 50,
+      "9": 50,
+      "10": 50,
+      "11": 50
+    },
+    "val": {
+      "0": 2,
+      "1": 16,
+      "2": 4,
+      "3": 1,
+      "4": 12,
+      "5": 1,
+      "6": 1,
+      "7": 1,
+      "10": 9
+    },
+    "test": {
+      "0": 3,
+      "1": 15,
+      "2": 2,
+      "3": 1,
+      "4": 7,
+      "5": 1,
+      "6": 2,
+      "7": 1,
+      "10": 1
+    }
+  },
+  "class_targets_for_split": {
+    "train": {
+      "0": 1,
+      "1": 1,
+      "2": 2,
+      "3": 2,
+      "4": 15,
+      "5": 1,
+      "6": 1,
+      "7": 1,
+      "8": 2,
+      "9": 2,
+      "10": 2,
+      "11": 1
+    },
+    "val": {
+      "0": 5,
+      "1": 16,
+      "2": 5,
+      "3": 1,
+      "4": 20,
+      "5": 4,
+      "6": 2,
+      "7": 2,
+      "8": 0,
+      "9": 0,
+      "10": 9,
+      "11": 0
+    },
+    "test": {
+      "0": 5,
+      "1": 16,
+      "2": 5,
+      "3": 1,
+      "4": 20,
+      "5": 4,
+      "6": 2,
+      "7": 2,
+      "8": 0,
+      "9": 0,
+      "10": 9,
+      "11": 0
+    }
+  },
+  "train_coverage_adjustments": {
+    "moved_groups_to_train": 0,
+    "moved_group_keys_examples": [],
+    "moved_box_counts_to_train": {}
+  },
+  "eval_coverage_adjustments": {
+    "moved_groups_to_val": 3,
+    "moved_groups_to_test": 3,
+    "moved_group_keys_to_val_examples": [
+      "0060_022_06",
+      "0067_023_01",
+      "0078_025_03"
+    ],
+    "moved_group_keys_to_test_examples": [
+      "0061_022_06",
+      "0079_025_03",
+      "0049_030_03"
+    ],
+    "moved_box_counts_to_val": {
+      "5": 1,
+      "6": 1,
+      "7": 1
+    },
+    "moved_box_counts_to_test": {
+      "5": 1,
+      "7": 1,
+      "10": 1
+    }
+  },
+  "source_split_inconsistencies": {},
+  "boost_info": {
+    "added_train_images": 445,
+    "impossible_classes": [],
+    "boosts_per_class": {
+      "0": 44,
+      "1": 24,
+      "2": 44,
+      "3": 24,
+      "4": 14,
+      "5": 43,
+      "6": 48,
+      "7": 47,
+      "8": 24,
+      "9": 48,
+      "10": 36,
+      "11": 49
+    },
+    "final_train_box_counts": {
+      "0": 50,
+      "1": 50,
+      "2": 50,
+      "3": 50,
+      "4": 50,
+      "5": 50,
+      "6": 50,
+      "7": 50,
+      "8": 50,
+      "9": 50,
+      "10": 50,
+      "11": 50
+    }
+  },
+  "duplicate_hash_cleanup": {
+    "removed_train_images": 30,
+    "removed_train_labels": 0,
+    "removed_train_examples": [
+      "0002_002_00_t00",
+      "0003_002_00_t00",
+      "0018_010_03_t00",
+      "0020_016_03_t00",
+      "0050_019_03_t00",
+      "0052_019_03_t00",
+      "0053_019_03_t00",
+      "0054_019_03_t00",
+      "0063_022_00_t00",
+      "0063_022_00_t01",
+      "0064_022_00_t00",
+      "0064_022_00_t01"
+    ]
+  },
+  "eval_split_hash_cleanup": {
+    "removed_test_images": 7,
+    "removed_test_labels": 0,
+    "removed_test_examples": [
+      "0001_002_00_t00",
+      "0019_016_03_t00",
+      "0049_030_03_t00",
+      "0079_025_03_t00",
+      "0102_010_03_t00",
+      "0103_010_03_t00",
+      "0103_010_03_t01"
+    ]
+  },
+  "dataset_yaml": "E:\\work\\26032401\\code1\\pfmd_tiled_dataset_refined\\pf_mdd.yaml"
+}

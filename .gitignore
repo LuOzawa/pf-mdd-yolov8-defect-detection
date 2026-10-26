@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# 训练输出
+training_results/
+training_reports/
+trained_models/
+runs/
+wandb/
+
+# 模型权重（yolov8s.pt 会自动下载）
+*.pt
+*.pth
+*.onnx
+*.engine
+*.torchscript
+
+# 数据集图片与标注（体量大，单独分发）
+pfmd_tiled_dataset/images/
+pfmd_tiled_dataset/labels/
+pfmd_tiled_dataset_refined/images/
+pfmd_tiled_dataset_refined/labels/
+pfmd_tiled_dataset_expanded/
+pfmd_tiled_dataset_balanced/
+data/Defect_images/
+data/Mask_images/
+data/NODefect_images/
+
+# 原始压缩包
+*.7z
+*.zip
+
+# 日志与临时文件
+*.log
+*.tmp
+temp/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# 系统
+.DS_Store
+Thumbs.db
+
+# 保留数据集元数据
+!datasets/**/*.json
+!datasets/**/*.yaml
+!datasets/**/*.txt

@@ -1,0 +1,33 @@
+# PF-MDD YOLOv8 训练/评估环境
+# 建议 Python 3.10（任务书要求），3.8 亦可
+#
+# 安装：pip install -r requirements.txt
+#
+# 如需 GPU 训练，请先按显卡 CUDA 版本安装 PyTorch：
+#   https://pytorch.org/get-started/locally/
+# 再执行本文件，避免 pip 装到 CPU-only 版本。
+
+# 深度学习框架（GPU 用户请改用官方 CUDA 版本）
+torch>=2.0.0
+torchvision>=0.15.0
+
+# 目标检测框架
+ultralytics>=8.0.0,<9.0.0
+
+# 图像处理
+opencv-python>=4.8.0
+Pillow>=10.0.0
+
+# 数据处理与可视化
+numpy>=1.24.0
+pandas>=2.0.0
+matplotlib>=3.7.0
+scipy>=1.10.0
+
+# 配置与训练过程监控
+PyYAML>=6.0
+tqdm>=4.65.0
+psutil>=5.9.0
+
+# 可选：类别均衡与统计
+scikit-learn>=1.3.0

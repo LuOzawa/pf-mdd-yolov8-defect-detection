@@ -1,0 +1,27 @@
+# PF-MDD Dataset Configuration for YOLOv8
+# Plastic Film Multi-class Defect Detection (4096x256)
+
+# Dataset paths
+path: E:/work/3.30/26032401/code1/pfmd_tiled_dataset_refined
+train: images/train
+val: images/val
+test: images/test
+
+# Number of defect classes
+nc: 12
+
+# Class names (contiguous YOLO indices mapped from raw defect IDs)
+names:
+  0: type_002
+  1: type_006
+  2: type_010
+  3: type_016
+  4: type_019
+  5: type_022
+  6: type_023
+  7: type_025
+  8: type_027
+  9: type_029
+  10: type_030
+  11: type_036
+
